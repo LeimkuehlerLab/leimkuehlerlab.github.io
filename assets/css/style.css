@@ -1,9 +1,4 @@
 /**
-* Template Name: DevFolio
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 */
 
 /*--------------------------------------------------------------
@@ -1339,8 +1334,8 @@ footer .credits a {
   /* background-color: rgba(152, 0, 2, 0.3); */
 }
 .team-member-info .tm-img img {
-  height: 180px;
-  width: 180px;
+  height: auto;
+  width: 100%;
 }
 .team-member-info .tm-name {
   padding: 15px 51px 4px 20px;
