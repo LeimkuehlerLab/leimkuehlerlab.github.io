@@ -997,10 +997,13 @@ a:hover {
 /*--------------------------------------------------------------
 # Teams
 --------------------------------------------------------------*/
+/* General Styling for Team Section */
 #team .title-box h3,
 #team .title-box p {
   color: #fff;
 }
+
+/* Team Box Styling */
 .Team-box {
   background-color: #fff;
   padding: 2rem 1.3rem;
@@ -1009,14 +1012,7 @@ a:hover {
   text-align: center;
 }
 
-/* .Team-box .author-test {
-  margin-top: 1rem;
-}
-
-.Team-box .author-test img {
-  margin: 0 auto;
-} */
-
+/* Team Member Details */
 .Team-box .author {
   color: #1e1e1e;
   text-transform: uppercase;
@@ -1044,28 +1040,12 @@ a:hover {
   border-radius: 50%;
   line-height: 1.6;
 }
+
 .team-member-info {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .Team-box .description {
-    padding: 0 5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .Team-box .description {
-    padding: 0 8rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .Team-box .description {
-    padding: 0 13rem;
-  }
-}
-
+/* Swiper Pagination */
 .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -1081,6 +1061,77 @@ a:hover {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  /* Adjust title size */
+  #team .title-box h3 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+  
+  /* Adjust Team-box padding */
+  .Team-box {
+    padding: 1rem; /* Reduced padding */
+  }
+  
+  /* Adjust author font size */
+  .Team-box .author {
+    font-size: 18px; /* Slightly smaller font size */
+  }
+
+  /* Adjust button size */
+  .Team-box .rm-btn {
+    padding: 6px 15px; /* Reduced padding */
+  }
+
+  /* Adjust team-member-info visibility if needed */
+  .team-member-info {
+    display: block; /* Show on mobile if you need it visible */
+  }
+
+  /* Adjust swiper pagination */
+  .swiper-pagination {
+    bottom: 10px; /* Move pagination closer to the swiper container */
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px; /* Smaller pagination bullets */
+    height: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  /* Further adjustments for very small screens */
+  #team .title-box h3 {
+    font-size: 1.2rem; /* Even smaller font size */
+  }
+
+  /* Further reduced padding for Team-box */
+  .Team-box {
+    padding: 0.5rem; /* Minimal padding */
+  }
+
+  /* Further adjust author font size */
+  .Team-box .author {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  /* Further adjust button size */
+  .Team-box .rm-btn {
+    padding: 5px 10px; /* Minimal padding */
+  }
+
+  /* Adjust swiper pagination */
+  .swiper-pagination {
+    bottom: 5px; /* Further adjust pagination position */
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 8px; /* Even smaller pagination bullets */
+    height: 8px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Collaborator
