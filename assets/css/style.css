@@ -997,63 +997,83 @@ a:hover {
 /*--------------------------------------------------------------
 # Teams
 --------------------------------------------------------------*/
-/* General Styling for Team Section */
 #team .title-box h3,
 #team .title-box p {
   color: #fff;
 }
-
-/* Team Box Styling */
 .Team-box {
   background-color: #fff;
-  padding: 1.5rem; /* Adjusted for mobile */
+  padding: 2rem 1.3rem;
   border-radius: 1rem;
-  margin-bottom: 2rem; /* Reduced margin for mobile */
+  margin-bottom: 3rem;
   text-align: center;
 }
 
-/* Team Member Details */
+/* .Team-box .author-test {
+  margin-top: 1rem;
+}
+
+.Team-box .author-test img {
+  margin: 0 auto;
+} */
+
 .Team-box .author {
   color: #1e1e1e;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: 10px; /* Adjusted margin */
+  margin: 15px 0 0 0;
   display: block;
-  font-size: 18px; /* Reduced font size for mobile */
+  font-size: 20px;
 }
 
 .Team-box .rm-btn {
   background-color: #980002;
   color: #fff;
-  padding: 6px 15px; /* Adjusted padding for mobile */
+  padding: 8px 20px;
   font-weight: 600;
 }
 
 .Team-box .comit {
-  font-size: 1.5rem; /* Adjusted for mobile */
+  font-size: 2rem;
   color: #0078ff;
   background-color: #fff;
-  width: 40px; /* Reduced size for mobile */
-  height: 40px;
+  width: 52px;
+  height: 52px;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
   line-height: 1.6;
 }
-
 .team-member-info {
-  display: none; /* Ensure hidden if not used */
+  display: none;
 }
 
-/* Swiper Pagination */
+@media (min-width: 768px) {
+  .Team-box .description {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .Team-box .description {
+    padding: 0 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Team-box .description {
+    padding: 0 13rem;
+  }
+}
+
 .swiper-pagination {
-  margin-top: 10px; /* Reduced margin for mobile */
+  margin-top: 20px;
   position: relative;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: 8px; /* Smaller pagination bullets */
-  height: 8px;
+  width: 12px;
+  height: 12px;
   background-color: rgba(255, 255, 255, 0.4);
   opacity: 1;
 }
@@ -1061,78 +1081,6 @@ a:hover {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 767px) {
-  /* Adjust title size */
-  #team .title-box h3 {
-    font-size: 1.5rem; /* Smaller font size for mobile */
-  }
-
-  /* Adjust Team-box padding */
-  .Team-box {
-    padding: 1rem; /* Further reduced padding */
-  }
-
-  /* Adjust author font size */
-  .Team-box .author {
-    font-size: 16px; /* Further reduced font size */
-  }
-
-  /* Adjust button size */
-  .Team-box .rm-btn {
-    padding: 5px 10px; /* Further reduced padding */
-  }
-
-  /* Adjust team-member-info visibility if needed */
-  .team-member-info {
-    display: block; /* Adjust if needed */
-  }
-
-  /* Adjust swiper pagination */
-  .swiper-pagination {
-    bottom: 5px; /* Adjust position for small screens */
-  }
-
-  .swiper-pagination .swiper-pagination-bullet {
-    width: 6px; /* Smaller pagination bullets */
-    height: 6px;
-  }
-}
-
-@media (max-width: 479px) {
-  /* Further adjustments for very small screens */
-  #team .title-box h3 {
-    font-size: 1.2rem; /* Even smaller font size */
-  }
-
-  /* Further reduced padding for Team-box */
-  .Team-box {
-    padding: 0.5rem; /* Minimal padding */
-  }
-
-  /* Further adjust author font size */
-  .Team-box .author {
-    font-size: 14px; /* Even smaller font size */
-  }
-
-  /* Further adjust button size */
-  .Team-box .rm-btn {
-    padding: 4px 8px; /* Minimal padding */
-  }
-
-  /* Adjust swiper pagination */
-  .swiper-pagination {
-    bottom: 0px; /* Further adjust pagination position */
-  }
-
-  .swiper-pagination .swiper-pagination-bullet {
-    width: 4px; /* Smallest pagination bullets */
-    height: 4px;
-  }
-}
-
-
 
 /*--------------------------------------------------------------
 # Collaborator
